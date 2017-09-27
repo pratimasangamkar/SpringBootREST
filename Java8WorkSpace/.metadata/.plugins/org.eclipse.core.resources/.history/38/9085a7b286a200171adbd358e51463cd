@@ -1,0 +1,42 @@
+package com.java8.util;
+
+public class EmployeeDetails {
+	
+	private int empId;
+	private String name;
+	private String clients;
+	
+	public EmployeeDetails(int empId, String name, String clients) {
+		super();
+		this.empId = empId;
+		this.name = name;
+		this.clients = clients;
+	}
+	
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getClients() {
+		return clients;
+	}
+	public void setClients(String clients) {
+		this.clients = clients;
+	}
+
+	@Override
+	public String toString() {
+		return "EmployeeDetails [empId=" + empId + ", name=" + name + ", clients=" + clients + "]";
+	}
+
+	
+
+}

@@ -1,0 +1,14 @@
+package com.java8.examples;
+
+interface test{
+	void show();
+}
+
+public class SpecialCaseLambda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

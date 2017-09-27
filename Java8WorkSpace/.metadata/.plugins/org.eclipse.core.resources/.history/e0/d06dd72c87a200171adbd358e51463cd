@@ -1,0 +1,18 @@
+package com.java8.examples.streams;
+
+import com.java8.util.EmployeeDetails;
+
+public class StreamEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EmployeeDetails emp1 = new EmployeeDetails(1, "Pratima", "Discover", "Java");
+		EmployeeDetails emp2 = new EmployeeDetails(1, "Pratima", "Discover", "Java");
+		EmployeeDetails emp3 = new EmployeeDetails(1, "Pratima", "Discover", "Java");
+		EmployeeDetails emp4 = new EmployeeDetails(1, "Pratima", "Discover", "Java");
+		EmployeeDetails emp5 = new EmployeeDetails(1, "Pratima", "Discover", "Java");
+		
+
+	}
+
+}

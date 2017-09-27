@@ -1,0 +1,32 @@
+package com.practise.java;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class MultithreadingDemo{
+	static List<Integer> positiveNumbers = new ArrayList<>();
+	static List<Integer> negativeNumbers = new ArrayList<>();
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<Integer> list = new ArrayList<>();
+		list.add(-1);
+		list.add(11);
+		list.add(0);
+		list.add(34);
+		list.add(-67);
+		list.add(-90);
+		
+		Runnable r = () ->{
+			positiveNumbers = list.stream().filter(x-> x>=0).collect(Collectors.toList());
+			negativeNumbers = list.stream().filter(x-> x<0).collect(Collectors.toList());
+		};
+		
+		Thread t = new Thread(r);
+
+	}
+
+}

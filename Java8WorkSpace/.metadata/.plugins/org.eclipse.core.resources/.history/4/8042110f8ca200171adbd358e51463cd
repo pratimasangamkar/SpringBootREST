@@ -1,0 +1,25 @@
+package com.java8.examples;
+
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+
+public class NashronDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ScriptEngineManager script = new ScriptEngineManager();
+		ScriptEngine nashron = script.getEngineByName("nashron");
+		
+		String name = "Pratima";
+		Integer result = null;
+		
+		try{
+			nashron.eval("print('" +name+ "')");
+			result = (Integer) nashron.eval("10+2");
+		}catch(ScriptException e){
+			System.out.println("Error executing script : "+e.getMessage());
+		}
+	}
+
+}

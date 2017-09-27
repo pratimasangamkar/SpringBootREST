@@ -1,0 +1,13 @@
+package com.java8.examples.time;
+
+import java.time.ZoneId;
+
+public class ZoneIdDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ZoneId zoneId = ZoneId.systemDefault(); 
+
+	}
+
+}

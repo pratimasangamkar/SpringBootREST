@@ -1,0 +1,14 @@
+package com.java8.examples.time;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class PeriodDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LocalDate local = LocalDate.now();
+		Period period =  
+	}
+
+}

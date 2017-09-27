@@ -1,0 +1,22 @@
+package com.practise.java;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s[] = {"pratima","ABCD","XYZ","pratima","pratima","ABCD"};
+		int count = 0;
+		
+		Map<String,Integer> map = new TreeMap<>();
+		
+		for(int i = 0; i < s.length; i++){
+			
+		}
+
+	}
+
+}

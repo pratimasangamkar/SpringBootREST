@@ -1,0 +1,9 @@
+package com.capgemini.model;
+
+public class Address {
+	private int flatNumber;
+	private String building;
+	private String city;
+	private String state;
+
+}

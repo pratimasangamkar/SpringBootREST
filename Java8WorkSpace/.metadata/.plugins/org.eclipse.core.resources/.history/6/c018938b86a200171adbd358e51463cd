@@ -1,0 +1,9 @@
+package com.java8.util;
+
+public class EmployeeDetails {
+	
+	private int empId;
+	private String name;
+	private String clients;
+
+}

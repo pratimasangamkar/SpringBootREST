@@ -1,0 +1,12 @@
+package com.practise.java;
+
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s[] = {"pratima","ABCD","XYZ","pratima","pratima","ABCD"};
+
+	}
+
+}

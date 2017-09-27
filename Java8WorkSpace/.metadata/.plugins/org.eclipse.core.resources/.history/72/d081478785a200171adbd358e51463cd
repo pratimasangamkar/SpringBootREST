@@ -1,0 +1,47 @@
+package com.java8.examples.streams;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
+
+public class StreamTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set<String> words = new TreeSet<>();
+		words.add("abc");
+		words.add("");
+		words.add("bc");
+		words.add("efg");
+		words.add("abcd");
+		words.add("");
+		words.add("jkl");
+		
+		System.out.println(words);
+		
+		Set<String> newSet = words.stream().filter(x -> !x.isEmpty()).collect(Collectors.toSet());
+		
+		System.out.println(newSet);
+		
+		
+		Map<Integer,String> map = new HashMap<>();
+		map.put(1, "abc");
+		map.put(2, "");
+		map.put(3, "bc");
+		map.put(4, "efg");
+		map.put(5, "abcd");
+		map.put(6, "");
+		map.put(7, "jkl");
+		
+		map.entrySet().stream().filter(x -> !x.getValue().isEmpty()).collect(Collectors.toList());
+		
+		
+		
+		
+
+	}
+
+}

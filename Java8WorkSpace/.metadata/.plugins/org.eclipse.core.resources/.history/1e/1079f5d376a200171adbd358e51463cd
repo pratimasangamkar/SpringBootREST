@@ -1,0 +1,17 @@
+package com.java8.examples;
+
+import java.util.Comparator;
+
+import com.java8.util.Employee;
+
+public class LambdaComparable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Comparator<Employee> comp = (x,y) -> {
+			return x.getEmpId() - y.getEmpId();
+		};
+
+	}
+
+}

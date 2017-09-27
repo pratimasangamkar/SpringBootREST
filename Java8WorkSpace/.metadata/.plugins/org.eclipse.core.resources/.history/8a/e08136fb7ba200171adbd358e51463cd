@@ -1,0 +1,24 @@
+package com.java8.examples;
+
+interface Left{
+	int a = 10;
+	default void m1(){
+		System.out.println("In left Interface");
+	}
+}
+
+interface Right{
+	int a = 10;
+	default void m1(){
+		System.out.println("In left Interface");
+	}
+}
+
+public class InterfaceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

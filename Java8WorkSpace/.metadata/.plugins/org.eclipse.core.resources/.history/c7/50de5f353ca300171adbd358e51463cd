@@ -1,0 +1,14 @@
+package com.java8.examples.time;
+
+import java.time.LocalDateTime;
+
+public class LocalDateTimeDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LocalDateTime localDateTime = LocalDateTime.now();
+		System.out.println(localDateTime);
+
+	}
+
+}

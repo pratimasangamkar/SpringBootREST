@@ -1,0 +1,38 @@
+package com.java8.examples;
+
+interface Left{
+	int a = 10;
+	default void m1(){
+		System.out.println("In left Interface");
+	}
+}
+
+interface Right{
+	int a = 80;
+	default void m1(){
+		System.out.println("In right Interface");
+	}
+}
+
+class TestInt implements Left,Right{
+
+	@Override
+	public void m1() {
+		// TODO Auto-generated method stub
+		Left.super.m1();
+		System.out.println("Overriding m1: "+Left.a);
+	}
+	
+}
+
+public class InterfaceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TestInt test = new TestInt();
+		test.m1();
+
+	}
+
+}

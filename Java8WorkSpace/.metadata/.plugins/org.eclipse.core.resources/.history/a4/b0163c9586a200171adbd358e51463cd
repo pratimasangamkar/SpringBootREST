@@ -1,0 +1,29 @@
+package com.java8.util;
+
+public class EmployeeDetails {
+	
+	private int empId;
+	private String name;
+	private String clients;
+	
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getClients() {
+		return clients;
+	}
+	public void setClients(String clients) {
+		this.clients = clients;
+	}
+
+
+}

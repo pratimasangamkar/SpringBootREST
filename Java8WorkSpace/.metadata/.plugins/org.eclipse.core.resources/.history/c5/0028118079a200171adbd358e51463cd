@@ -1,0 +1,25 @@
+package com.java8.examples;
+
+interface TestLocal{
+	void show();
+}
+
+public class SpecialCaseLambda {
+
+	int x;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		testLambdaLocal();
+	}
+	
+	public static void testLambdaLocal(){
+		
+		int y = 100;
+		TestLocal t = () ->{
+			
+		};
+		
+	}
+
+}
