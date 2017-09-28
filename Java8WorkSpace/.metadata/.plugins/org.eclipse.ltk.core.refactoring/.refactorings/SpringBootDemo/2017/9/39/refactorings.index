@@ -1,2 +1,7 @@
 1506494143355	Move compilation unit
 1506494158094	Move compilation unit
+1506582113277	Delete element
+1506582377333	Delete element
+1506582394524	Rename resource 'application.properties'
+1506582761766	Rename resource 'application_DEV.properties'
+1506582771453	Rename resource 'application_PROD.properties'
