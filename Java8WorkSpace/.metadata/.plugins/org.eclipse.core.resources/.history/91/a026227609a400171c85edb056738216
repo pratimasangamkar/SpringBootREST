@@ -1,0 +1,39 @@
+package com.example.demo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.model.Topic;
+import com.example.demo.service.TopicService;
+
+@RestController
+public class TopicController {
+
+	@Autowired
+	private TopicService topicService;
+	
+	public List<Topic> getAllTopics(){
+		return topicService.getAllTopics();
+	}
+	
+	public Topic getTopic(int id){
+		return topicService.getTopic(id);
+	}
+
+	public void addTopic(Topic topic){
+		topicService.add(topic);
+	}
+	
+	public void updateTopic(int id, Topic topic){
+		
+		topics.stream().filter(x -> x.getId() == id).map(x -> x=topic);
+	}
+	
+	public void deleteTopic(int id){
+		topics .removeIf(x -> x.getId()==id);
+	}
+	
+	
+}
